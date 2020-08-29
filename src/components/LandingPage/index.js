@@ -13,7 +13,7 @@ const LandingPage = () => {
         <ul>
           <li>
             <Link to={"/gallary"}>
-              <button className="lp-btn" type="button">
+              <button className="lp-btn" type="button" disabled>
                 Photo Gallary
               </button>
             </Link>
