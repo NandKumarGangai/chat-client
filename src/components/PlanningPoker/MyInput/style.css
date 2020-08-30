@@ -5,22 +5,39 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .im-input {
-    padding: 0.7rem;
+    padding: 0.8rem;
+    opacity: 0.8;
+    color: white;
     border-radius: 10px;
+    background: #1A1A1D;
+    box-shadow: 6px 6px 12px #0f0f11, -6px -6px 12px #202024;
 }
 
 .im-btn {
+    padding: 0.8rem;
+    opacity: 0.8;
     color: white;
     margin-left: 2rem;
     background-color: rgb(40, 138, 202);
     transform: scale(0.9);
+    background: #1A1A1D;
+    box-shadow: 6px 6px 12px #0f0f11, -6px -6px 12px #202024;
 }
 
 .im-btn:hover,
 .im-btn:focus {
     background-color: rgb(10, 83, 133);
     transform: scale(1.0);
+    background: #1A1A1D;
+    box-shadow: inset 6px 6px 12px #0f0f11, inset -6px -6px 12px #202024;
 }
+
+@media screen and (max-width: 600px) {
+    .im-btn {
+        margin: 1rem;
+    }
+  }

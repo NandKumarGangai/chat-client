@@ -5,8 +5,8 @@
   
   .input {
     border: none;
-    border-radius: 0;
-    padding: 5%;
+    border-bottom-left-radius: 5px;
+    padding: 0.8rem;
     width: 80%;
     font-size: 1.2em;
   }
@@ -20,8 +20,9 @@
     text-transform: uppercase;
     text-decoration: none;
     background: #2979FF;
-    padding: 20px;
+    padding: 0.8rem;
     display: inline-block;
     border: none;
+    border-bottom-right-radius: 5px;
     width: 20%;
   }

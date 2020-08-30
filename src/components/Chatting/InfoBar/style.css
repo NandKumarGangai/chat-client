@@ -12,8 +12,16 @@
     flex: 0.5;
     display: flex;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 1rem;
     color: white;
+  }
+
+  .leftInnerContainer img {
+    margin: 1rem;
+  }
+
+  .leftInnerContainer h3 {
+    text-transform: capitalize;
   }
   
   .rightInnerContainer {

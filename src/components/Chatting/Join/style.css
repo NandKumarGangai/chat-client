@@ -21,6 +21,18 @@ html, body {
   background-color: #1A1A1D;
 }
 
+.joinInput {
+  color: white;
+  margin: 1rem auto;
+  background-color: #1A1A1D;
+  border-radius: 10px;
+  box-shadow: 6px 6px 12px #0c0c0e, -6px -6px 12px #232327;
+}
+
+.joinInnerContainer div input {
+  border-radius: 10px;
+}
+
 .joinInnerContainer {
   width: 20%;
 }
@@ -31,23 +43,41 @@ html, body {
   width: 100%;
 }
 
+small {
+  color: red;
+  letter-spacing: 1px;
+}
+
+.border-danger {
+  border: red;  
+}
+
 .heading {
   color: white;
   font-size: 2.5em;
   padding-bottom: 10px;
-  border-bottom: 2px solid white;
 }
 
 .button {
     color: #fff !important;
     text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
     text-decoration: none;
-    background: #2979FF;
-    padding: 20px;
-    border-radius: 5px;
+    background-color: #151516;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px #0f0f11, -6px -6px 12px #202024;
+    padding: 15px;
+    border-radius: 10px;
     display: inline-block;
     border: none;
+    outline: none;
     width: 100%;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: inset 6px 6px 12px #141416, inset -6px -6px 12px #202024;
 }
 
 .mt-20 {
@@ -62,8 +92,6 @@ html, body {
   .joinInnerContainer {
     width: 90%;
   }
-
-
 }
 
 button:focus {
