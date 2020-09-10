@@ -5,9 +5,11 @@ To run project locally run  `npm run start` command.
 Live: https://sheltered-brushlands-28733.herokuapp.com/
 
 This app built using below tech stack:
-React JS
-Socket IO
-Simple Peer
+<ul>
+<li>React JS</li>
+<li>Socket IO</li>
+<li>Simple Peer</li>
+</ul>
 
 This app has four sub modules
 # 1. Image gallary:
