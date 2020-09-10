@@ -32,6 +32,13 @@ const LandingPage = () => {
               </button>
             </Link>
           </li>
+          <li>
+            <Link to={"/video"}>
+              <button className="lp-btn" type="button">
+                Video Call
+              </button>
+            </Link>
+          </li>
         </ul>
       </div>
     </div>

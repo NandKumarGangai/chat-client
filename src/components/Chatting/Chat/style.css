@@ -16,6 +16,19 @@
   width: 35%;
 }
 
+.v-button {
+  background-color: turquoise;
+  padding: 0.7rem;
+  margin: 0.2rem;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.v-button:focus,
+.v-button:hover {
+  transform: scale(1.05);
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .outerContainer {
     height: 100%;

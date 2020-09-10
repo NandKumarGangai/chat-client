@@ -13,8 +13,10 @@ const PlanningPoker = ({ location }) => {
   const [users, setUsers] = useState([]);
   const [myPoints, setMyPoints] = useState("");
   const [points, setPoints] = useState("");
+  const [currentUser, setCurrentUser] = useState({});
 
-  const ENDPOINT = "https://salty-ocean-14260.herokuapp.com/";
+  // const ENDPOINT = "https://salty-ocean-14260.herokuapp.com/";
+  const ENDPOINT = "http://localhost:5000/";
 
   useEffect(() => {
     const { name, room } = qs.parse(location.search);
@@ -23,6 +25,10 @@ const PlanningPoker = ({ location }) => {
     setRoom(room);
 
     socket.emit("join", { name, room }, () => {});
+
+    socket.on("currentUser", (user) => {
+      setCurrentUser(user);
+    });
 
     socket.emit("disconnect");
     return () => {
@@ -38,7 +44,7 @@ const PlanningPoker = ({ location }) => {
 
   const sendPoints = (e) => {
     e.preventDefault();
-    
+
     if (myPoints) {
       socket.emit("sendPoints", myPoints, () => {
         setMyPoints("");
@@ -64,11 +70,14 @@ const PlanningPoker = ({ location }) => {
         sendPoints={sendPoints}
         flipCards={flipCards}
       />
-      <div className='pp-subheader'>
+      <div className="pp-subheader">
         <h2>{points && `You have given ${points} story points!!!!`}</h2>
       </div>
       <div className="pp-container">
-        {users && users.map((user) => <UserIcon key={user.id} user={user} />)}
+        {users &&
+          users.map((user) => (
+            <UserIcon key={user.id} user={user} currentUser={currentUser} />
+          ))}
       </div>
     </div>
   );

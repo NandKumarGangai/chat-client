@@ -27,8 +27,18 @@
     margin-bottom: 0px;
   }
   
+  .onlineIcon {
+    margin-right: 1rem;
+  }
+
+  .videoCallIcon {
+    height: 2rem;
+    width: 3rem;
+    cursor: pointer;
+  }
+
   @media (min-width: 320px) and (max-width: 1200px) {
-    .textContainer {
+    /* .textContainer {
       display: none;
-    }
+    } */
   }

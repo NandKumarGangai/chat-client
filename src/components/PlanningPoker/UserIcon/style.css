@@ -1,11 +1,16 @@
+* {
+	padding: 0%;
+	margin: 0%;
+}
+
 .ui-container {
     background-color: blueviolet;
 }
 
 .ui-box {
 	margin: 10px;
-	width: 8rem;
-	height: 12rem;
+	width: 12rem;
+	height: 15rem;
 	text-align: center;
 	border-radius: 5px;
 	transition: 200ms ease-in-out;
@@ -212,4 +217,16 @@
 	background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	-webkit-box-shadow: 0 0 20px olive;
 	        box-shadow: 0 0 20px olive;
+}
+
+@media screen and (max-width: 500px) {
+	.ui-box {
+		margin: 10px;
+		width: 10rem;
+		height: 12rem;
+		text-align: center;
+		border-radius: 5px;
+		transition: 200ms ease-in-out;
+		box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	}
 }

@@ -16,8 +16,9 @@ const Chat = ({ location }) => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
 
-  const ENDPOINT = "https://salty-ocean-14260.herokuapp.com/";
-
+  // const ENDPOINT = "https://salty-ocean-14260.herokuapp.com/";
+  const ENDPOINT = 'localhost:5000';
+  
   useEffect(() => {
     const { name, room } = qs.parse(location.search);
     socket = io(ENDPOINT);
