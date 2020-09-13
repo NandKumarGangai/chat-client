@@ -11,12 +11,7 @@ This app built using below tech stack:
 <li>Simple Peer</li>
 </ul>
 
-This app has four sub modules
-# 1. Image gallary:
-  Image gallary made using React JS with PixaBay API.
-  You can see latest images features on Pixabay.
-  You can search images using various categories.
-  You can also see some information about each image.
+This app has three sub modules
  
 # 2. P2P Video chat app:
   It built using React JS, Simple Peer and socket IO.
@@ -29,6 +24,3 @@ This app has four sub modules
   
 # 4. Planning Poker:
   It is also built using React JS and socket IO.
-
-  
-  

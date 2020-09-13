@@ -12,13 +12,6 @@ const LandingPage = () => {
       <div className='lp-nav'>
         <ul>
           <li>
-            <Link to={"/gallary"}>
-              <button className="lp-btn" type="button" disabled>
-                Photo Gallary
-              </button>
-            </Link>
-          </li>
-          <li>
             <Link to={"/join?to=chat"}>
               <button className="lp-btn" type="button">
                 Chat App
